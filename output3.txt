@@ -1,0 +1,66 @@
+25.04.2024 13:22:52.829 - Předák našel 12 zdrojů, trvalo mu to 2 ms.
+25.04.2024 13:22:52.832 - Předák našel 12 bloků, trvalo mu to 2 ms.
+25.04.2024 13:22:52.843 - Dělník 4 vytěžil zdroj, trvalo mu to 0 ms.
+25.04.2024 13:22:52.843 - Dělník 4 vytěžil celý blok, trvalo mu to 0 ms.
+25.04.2024 13:22:52.848 - Dělník 3 vytěžil zdroj, trvalo mu to 5 ms.
+25.04.2024 13:22:52.848 - Dělník 3 vytěžil celý blok, trvalo mu to 5 ms.
+25.04.2024 13:22:52.848 - Dělník 3 nese 1 zdrojů.
+25.04.2024 13:22:52.847 - Dělník 4 nese 1 zdrojů.
+25.04.2024 13:22:52.851 - Dělník 1 vytěžil zdroj, trvalo mu to 8 ms.
+25.04.2024 13:22:52.851 - Dělník 2 vytěžil zdroj, trvalo mu to 8 ms.
+25.04.2024 13:22:52.851 - Dělník 1 vytěžil celý blok, trvalo mu to 8 ms.
+25.04.2024 13:22:52.851 - Dělník 1 nese 1 zdrojů.
+25.04.2024 13:22:52.851 - Dělník 2 vytěžil celý blok, trvalo mu to 8 ms.
+25.04.2024 13:22:52.851 - Dělník 2 nese 1 zdrojů.
+25.04.2024 13:22:53.852 - Dělník 3 nakládá 1 zdrojů do Náklaďáku: 1
+25.04.2024 13:22:53.864 - Dělník 3 vytěžil zdroj, trvalo mu to 8 ms.
+25.04.2024 13:22:53.864 - Dělník 3 vytěžil celý blok, trvalo mu to 8 ms.
+25.04.2024 13:22:53.864 - Dělník 3 nese 1 zdrojů.
+25.04.2024 13:22:54.855 - Dělník 4 nakládá 1 zdrojů do Náklaďáku: 1
+25.04.2024 13:22:54.857 - Dělník 4 vytěžil zdroj, trvalo mu to 1 ms.
+25.04.2024 13:22:54.857 - Dělník 4 vytěžil celý blok, trvalo mu to 1 ms.
+25.04.2024 13:22:54.857 - Dělník 4 nese 1 zdrojů.
+25.04.2024 13:22:55.856 - Dělník 1 nakládá 1 zdrojů do Náklaďáku: 1
+25.04.2024 13:22:55.856 - Náklaďák 1 je připraven vyrazit, naplnit ho trvalo přibližně 3012 ms.
+25.04.2024 13:22:55.861 - Dělník 1 vytěžil zdroj, trvalo mu to 4 ms.
+25.04.2024 13:22:55.861 - Dělník 1 vytěžil celý blok, trvalo mu to 4 ms.
+25.04.2024 13:22:55.861 - Náklaďák 1 dojel k trajektu, trvalo mu to 4 ms.
+25.04.2024 13:22:55.861 - Dělník 1 nese 1 zdrojů.
+25.04.2024 13:22:56.857 - Dělník 2 nakládá 1 zdrojů do Náklaďáku: 2
+25.04.2024 13:22:56.859 - Dělník 2 vytěžil zdroj, trvalo mu to 1 ms.
+25.04.2024 13:22:56.859 - Dělník 2 vytěžil celý blok, trvalo mu to 1 ms.
+25.04.2024 13:22:56.859 - Dělník 2 nese 1 zdrojů.
+25.04.2024 13:22:57.858 - Dělník 3 nakládá 1 zdrojů do Náklaďáku: 2
+25.04.2024 13:22:57.865 - Dělník 3 vytěžil zdroj, trvalo mu to 6 ms.
+25.04.2024 13:22:57.865 - Dělník 3 vytěžil celý blok, trvalo mu to 6 ms.
+25.04.2024 13:22:57.865 - Dělník 3 nese 1 zdrojů.
+25.04.2024 13:22:58.859 - Dělník 4 nakládá 1 zdrojů do Náklaďáku: 2
+25.04.2024 13:22:58.859 - Náklaďák 2 je připraven vyrazit, naplnit ho trvalo přibližně 3002 ms.
+25.04.2024 13:22:58.868 - Náklaďák 2 dojel k trajektu, trvalo mu to 8 ms.
+25.04.2024 13:22:58.869 - Dělník 4 vytěžil zdroj, trvalo mu to 9 ms.
+25.04.2024 13:22:58.869 - Dělník 4 vytěžil celý blok, trvalo mu to 9 ms.
+25.04.2024 13:22:58.869 - Dělník 4 nese 1 zdrojů.
+25.04.2024 13:22:59.859 - Dělník 1 nakládá 1 zdrojů do Náklaďáku: 3
+25.04.2024 13:22:59.864 - Dělník 1 vytěžil zdroj, trvalo mu to 4 ms.
+25.04.2024 13:22:59.864 - Dělník 1 vytěžil celý blok, trvalo mu to 4 ms.
+25.04.2024 13:22:59.864 - Dělník 1 nese 1 zdrojů.
+25.04.2024 13:23:00.860 - Dělník 2 nakládá 1 zdrojů do Náklaďáku: 3
+25.04.2024 13:23:00.860 - Dělník 2 vytěžil zdroj, trvalo mu to 0 ms.
+25.04.2024 13:23:00.860 - Dělník 2 vytěžil celý blok, trvalo mu to 0 ms.
+25.04.2024 13:23:00.860 - Dělník 2 nese 1 zdrojů.
+25.04.2024 13:23:01.860 - Dělník 3 nakládá 1 zdrojů do Náklaďáku: 3
+25.04.2024 13:23:01.860 - Náklaďák 3 je připraven vyrazit, naplnit ho trvalo přibližně 3001 ms.
+25.04.2024 13:23:01.865 - Náklaďák 3 dojel k trajektu, trvalo mu to 4 ms.
+25.04.2024 13:23:02.862 - Dělník 4 nakládá 1 zdrojů do Náklaďáku: 4
+25.04.2024 13:23:03.870 - Dělník 1 nakládá 1 zdrojů do Náklaďáku: 4
+25.04.2024 13:23:04.884 - Dělník 2 nakládá 1 zdrojů do Náklaďáku: 4
+25.04.2024 13:23:04.884 - Náklaďák 4 je připraven vyrazit, naplnit ho trvalo přibližně 3023 ms.
+25.04.2024 13:23:04.890 - Náklaďák 4 dojel k trajektu, trvalo mu to 5 ms.
+25.04.2024 13:23:04.890 - Trajekt odjíždí, trvalo ho naplnit 12055 ms.
+25.04.2024 13:23:04.900 - Náklaďák 1 přijel na místo určení, trvalo mu to 9 ms.
+25.04.2024 13:23:04.900 - Náklaďák 2 přijel na místo určení, trvalo mu to 9 ms.
+25.04.2024 13:23:04.900 - Náklaďák 3 přijel na místo určení, trvalo mu to 9 ms.
+25.04.2024 13:23:04.900 - Náklaďák 4 přijel na místo určení, trvalo mu to 9 ms.
+///////////////////////////////
+
+Počet vytěžených zdrojů: 12.
