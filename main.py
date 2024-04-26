@@ -21,6 +21,7 @@ blocks_mined = [0, 0]
 sources_mined = [0, 0]
 
 
+
 def parse_log_file(log_file_path):
     # Parse the log file and extract worker actions and resources
     worker_actions = []
@@ -35,22 +36,20 @@ def parse_log_file(log_file_path):
             parts = line.split()
 
             if(first_line):
-                start_time_simulation = parts[0] +" "+  parts[1]
+                start_time_simulation = parts[0] +" "+ parts[1]
                 first_line = False
 
             # Working with workers and its statistics
             if WORKER_MINED_A_SOURCE in line:
                 sources_mined[0] += 1
                 action_id = parts[4]
-                time_to_mine = int(parts[10])
-                sources_mined[1] += time_to_mine
+
                 if action_id not in [action['id'] for action in worker_actions]:
-                    worker_actions.append({"id": action_id, "resource_count": 1, "time_to_mine": time_to_mine, "work_time": 0})
+                    worker_actions.append({"id": action_id, "resource_count": 1, "work_time": 0.0})
                 else:
                     # Pokud id dělníka již existuje, zvýš počet zdrojů o 1
                     worker_index = [action['id'] for action in worker_actions].index(action_id)
                     worker_actions[worker_index]["resource_count"] += 1
-                    worker_actions[worker_index]["time_to_mine"] += time_to_mine
 
             if WORKER_MINED_A_BLOCK in line:
                 blocks_mined[0] += 1
@@ -59,8 +58,7 @@ def parse_log_file(log_file_path):
             if W_INTO_LORRY in line:
                 action_id = parts[4]
                 worker_index = [action['id'] for action in worker_actions].index(action_id)
-                worker_actions[worker_index]["time_to_mine"] += PUT_INTO_LORRY
-                worker_actions[worker_index]["work_time"] = int(parts[1])
+                worker_actions[worker_index]["work_time"] = time(start_time_simulation, parts[0] + " " + parts[1])
 
             # Working with lorries and its statistics
             if LORRY_READY_TO_GO in line:
@@ -133,7 +131,7 @@ def generate_xml(worker_actions, lorry_actions, ferry_actions, simulation_t, out
         resource_element.text = str(worker_action["resource_count"])
 
         workerDuration_element = ET.SubElement(worker_element, "workDuration")
-        workerDuration_element.text = str(worker_action["time_to_mine"]) + " ms"
+        workerDuration_element.text = str(worker_action["work_time"]) + " ms"
 
     # Create XML elements for sorted lorry actions
     for lorry_action in sorted_lorry_actions:
