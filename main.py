@@ -5,7 +5,6 @@ from datetime import datetime
 """
 Constant variables
 """
-PUT_INTO_LORRY = 1000  # time to put a source into lorry = 1s
 WORKER_MINED_A_SOURCE = "vytěžil zdroj"
 W_INTO_LORRY = "nakládá"
 LORRY_READY_TO_GO = "připraven vyrazit"
