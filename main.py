@@ -96,8 +96,8 @@ def time(start_time, end_time):
 
 def generate_xml(worker_actions, lorry_actions, ferry_actions, simulation_t, output_file_path):
     # Sort worker actions by ID
-    sorted_worker_actions = sorted(worker_actions, key=lambda x: x["id"])
-    sorted_lorry_actions = sorted(lorry_actions, key=lambda x: x["id"])
+    sorted_worker_actions = sorted(worker_actions, key=lambda x: int(x["id"]))
+    sorted_lorry_actions = sorted(lorry_actions, key=lambda x: int(x["id"]))
 
     # Create XML structure
     root = ET.Element("Simulation")
@@ -116,7 +116,8 @@ def generate_xml(worker_actions, lorry_actions, ferry_actions, simulation_t, out
     #Ferry logs
     ferry_average_time_element = ET.SubElement(root, "ferryAverageWait")
     ferry_average_time_element.set("trips", str(ferry_actions[0]))
-    ferry_average_time_element.text = str(round(ferry_actions[1] / ferry_actions[0], 3)) + " ms"
+    average_wait_time = round(ferry_actions[1] / ferry_actions[0], 3)
+    ferry_average_time_element.text = str(average_wait_time) + " ms"
 
     # Create Workers element
     workers_element = ET.SubElement(root, "Workers")
@@ -141,7 +142,7 @@ def generate_xml(worker_actions, lorry_actions, ferry_actions, simulation_t, out
         loadTime_element = ET.SubElement(lorry_element, "loadTime")
         loadTime_element.text = str(lorry_action["time_to_fill"]) + " ms"
         transportTime_element = ET.SubElement(lorry_element, "transportTime")
-        transportTime_element.text = str(lorry_action["transport_time"] + ferry_actions[1]) + " ms"
+        transportTime_element.text = str((lorry_action["transport_time"] + average_wait_time)) + " ms"
 
     # Create an ElementTree object
     tree = ET.ElementTree(root)
